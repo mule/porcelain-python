@@ -13,6 +13,8 @@ defmodule PorcelainPython do
     IO.inspect status
     IO.inspect output
     
+     PythonMessenger.test_messages
+    
     {:ok, self()}
     
   end
