@@ -7,6 +7,12 @@ defmodule PorcelainPython do
 
     IO.inspect status
     IO.inspect output
+
+    %Result{out: output, status: status} = Porcelain.shell("python ./python_scripts/hello_python.py")
+    
+    IO.inspect status
+    IO.inspect output
+    
     {:ok, self()}
     
   end
